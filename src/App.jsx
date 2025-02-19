@@ -1,3 +1,12 @@
+import { ThemeProvider } from "@emotion/react";
+import { createTheme } from "@mui/material";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+// Pages
+import Home from "@/pages/Home";
+import NotFound from "@/pages/NotFound";
+import TraineeApiFetchingTest from "@/pages/TraineeApiFetchingTest";
+
 export default function App(){
 
 	/* One of the things I like MUI its how easy is to configure colors and dark/light mode, here is a minimal example */
@@ -31,6 +40,7 @@ export default function App(){
 					<Route path="/">
 						<Route index element={<Home />}/>
 						<Route path="home" element={<Home />}/>
+						<Route path="trainee" element={<TraineeApiFetchingTest />} />
 						<Route path="*" element={<NotFound />}/>
 					</Route>
 				</Routes>
