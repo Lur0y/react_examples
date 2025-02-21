@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/NotFound";
 import TraineeApiFetchingTest from "@/pages/TraineeApiFetchingTest";
+import CustomHooks from "@/pages/CustomHooks";
 
 export default function App(){
 
@@ -41,6 +42,7 @@ export default function App(){
 						<Route index element={<Home />}/>
 						<Route path="home" element={<Home />}/>
 						<Route path="trainee" element={<TraineeApiFetchingTest />} />
+						<Route path="customHooks" element={<CustomHooks />} />
 						<Route path="*" element={<NotFound />}/>
 					</Route>
 				</Routes>

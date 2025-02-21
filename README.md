@@ -28,4 +28,4 @@ npm run dev
 If you use something like `"import.meta.env.VITE_BACKEND_DIR"`, make sure to add `*.env` to your `.gitignore` file. It's for your own security… and your backend’s mental health. 😆
 
 ## Folder structure I typically use
-assets for images or resources, components for reusable components, pages for components that shows directly on a URL, logic for pure JS, context for react context. I also use the main for global imports and App for browser-router
+assets for images or resources, components for reusable components, pages for components that shows directly on a URL, services for pure JS, context for react context. I also use the main for global imports and App for browser-router
